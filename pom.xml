@@ -20,8 +20,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.marvinformatics</groupId>
-  <artifactId>${name}</artifactId>
+  <artifactId>junit-before-suite</artifactId>
   <version>0.1-SNAPSHOT</version>
+  
+  <name>junit-before-suite</name>
+  <description>This project shows how to create a @ClassRule that mimic testNG @BeforeSuite (run before all tests in this suite have run)</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,7 +33,13 @@
     <java.version>1.8</java.version>
   </properties>
 
-  <dependencies></dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement>
@@ -224,9 +233,9 @@
     </plugins>
   </build>
 
-  <url>https://github.com/${owner}/${name}/</url>
+  <url>https://github.com/velo/junit-before-suite/</url>
 
-  <inceptionYear>${year}</inceptionYear>
+  <inceptionYear>2016</inceptionYear>
 
   <licenses>
     <license>
@@ -246,9 +255,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:${owner}/${name}.git</connection>
-    <developerConnection>scm:git:git@github.com:${owner}/${name}.git</developerConnection>
-    <url>https://github.com/${owner}/${name}/</url>
+    <connection>scm:git:git@github.com:velo/junit-before-suite.git</connection>
+    <developerConnection>scm:git:git@github.com:velo/junit-before-suite.git</developerConnection>
+    <url>https://github.com/velo/junit-before-suite/</url>
   </scm>
 
   <distributionManagement>
